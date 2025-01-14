@@ -38,7 +38,3 @@ if ( class_exists( 'DraftScripts\Activate' ) ) {
 if ( class_exists( 'DraftScripts\Deactivate' ) ) {
     register_deactivation_hook( __FILE__, array( 'DraftScripts\Deactivate', 'register' ) );
 }
-
-add_filter( 'body_class', function () {
-    return [ 'wp-draftscripts' ];
-} );

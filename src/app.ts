@@ -1,5 +1,4 @@
-console.log('Hello, world! 🌍');
-
+import './App.tsx'
 // add nav
 document.addEventListener('DOMContentLoaded', function () {
     // based on https://getbootstrap.com/docs/5.0/components/navs-tabs/

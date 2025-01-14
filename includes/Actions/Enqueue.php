@@ -23,9 +23,11 @@ class Enqueue extends BasePlugin
             'wp-draftscripts',
             "{$this->pluginURL}assets/build/css/app.css"
         );
+		wp_enqueue_script('wp-i18n');
         wp_enqueue_script(
             'wp-draftscripts',
-            "{$this->pluginURL}assets/build/js/app.js"
+            "{$this->pluginURL}assets/build/js/app.js",
+            ['wp-i18n'],
         );
     }
 }
